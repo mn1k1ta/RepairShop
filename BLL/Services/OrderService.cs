@@ -96,7 +96,7 @@ namespace BLL.Services
             return _mapper.Map<ICollection<OrderDTO>>(await _database.orderRepository.GetWhereAsync(o=>o.Active=="Active"));
         }
 
-        public async Task<ICollection<OrderDTO>> GetAllOrdersAsync(OrderDTO orderDTO)
+        public async Task<ICollection<OrderDTO>> GetAllOrdersAsync()
         {
             return _mapper.Map<ICollection<OrderDTO>>(await _database.orderRepository.GetAllAsync());
         }

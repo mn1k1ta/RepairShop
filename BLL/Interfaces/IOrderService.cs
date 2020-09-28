@@ -12,7 +12,7 @@ namespace BLL.Interfaces
         Task<OperationDetails> CreateOrderAsync(OrderDTO orderDTO);
         Task<OperationDetails> EditOrderAsync(OrderDTO orderDTO);
         Task<OperationDetails> DeleteOrderAsync(OrderDTO orderDTO);
-        Task<ICollection<OrderDTO>> GetAllOrdersAsync(OrderDTO orderDTO);
+        Task<ICollection<OrderDTO>> GetAllOrdersAsync();
         Task<OrderDTO> GetOrderById(int id);
         Task<ICollection<OrderDTO>> GetOrderByUserAsync(int id);
         Task<ICollection<OrderDTO>> GetActiveOrdersAsync();

@@ -28,5 +28,53 @@ namespace RepairShop.Controllers
                        ? (IActionResult)Ok(serviceActionResult)
                        : BadRequest(serviceActionResult);
         }
+
+        [HttpPut]
+        [Route("EditOrder")]
+        public async Task<IActionResult> EditOrderAsync(OrderDTO orderDTO)
+        {
+            var serviceActionResult = await orderService.EditOrderAsync(orderDTO);
+            return serviceActionResult.Succedeed
+                       ? (IActionResult)Ok(serviceActionResult)
+                       : BadRequest(serviceActionResult);
+        }
+
+        [HttpDelete]
+        [Route("DeleteOrder")]
+        public async Task<IActionResult> DeleteOrderAsync(OrderDTO orderDTO)
+        {
+            var serviceActionResult = await orderService.DeleteOrderAsync(orderDTO);
+            return serviceActionResult.Succedeed
+                       ? (IActionResult)Ok(serviceActionResult)
+                       : BadRequest(serviceActionResult);
+        }
+
+        [HttpGet]
+        [Route("GetAllOrders")]
+        public async Task<IActionResult> GetAllOrdersAsync()
+        {
+            return Ok(await orderService.GetAllOrdersAsync());
+        }
+
+        [HttpGet]
+        [Route("GetOrdersByCustomer")]
+        public async Task<IActionResult> GetOrdersByCustomerAsync(int id)
+        {
+            return Ok(await orderService.GetOrderByUserAsync(id));
+        }
+
+        [HttpGet]
+        [Route("GetOrderById")]
+        public async Task<IActionResult> GetOrderByIdAsync(int id)
+        {
+            return Ok(await orderService.GetOrderById(id));
+        }
+
+        [HttpGet]
+        [Route("GetActiveOrders")]
+        public async Task<IActionResult> GetActiveOrdersAsync()
+        {
+            return Ok(await orderService.GetActiveOrdersAsync());
+        }
     }
 }
