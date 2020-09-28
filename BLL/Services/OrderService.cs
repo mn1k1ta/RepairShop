@@ -47,44 +47,74 @@ namespace BLL.Services
             foreach (var item in orderDTO.Prices)
             {
                 var price = await _database.priceRepository.GetByIdAsync(item);
-                _database.orderPriceRepository.Create(new OrderPrice { Order=order,Price=price});
-                if (price== null)
+                if (price == null)
                 {
                     return new OperationDetails($"Price with this id : {item} is not found!", false);
                 }
+                _database.orderPriceRepository.Create(new OrderPrice { Order=order,Price=price});
+               
             }
             await _database.SaveAsync();
             return new OperationDetails("Order is created !", true);
         }
 
-        public Task<OperationDetails> DeleteOrderAsync(OrderDTO orderDTO)
+        public async Task<OperationDetails> DeleteOrderAsync(OrderDTO orderDTO)
         {
-            throw new NotImplementedException();
+            if (orderDTO == null)
+            {
+                return new OperationDetails("Order is null!", false);
+            }
+            var order = await _database.orderRepository.GetByIdAsync(orderDTO.OrderId);
+            if(order == null)
+            {
+                return new OperationDetails("Order with this id is null", false);
+            }
+            _database.orderRepository.Delete(order);
+            await _database.SaveAsync();
+            return new OperationDetails("Order is deleted!", true);
         }
 
-        public Task<OperationDetails> EditOrderAsync(OrderDTO orderDTO)
+        public async Task<OperationDetails> EditOrderAsync(OrderDTO orderDTO)
         {
-            throw new NotImplementedException();
+            if (orderDTO == null)
+            {
+                return new OperationDetails("OrderDTO is null", false);
+            }
+            var order = await _database.orderRepository.GetByIdAsync(orderDTO.OrderId);
+            if (order == null)
+            {
+                return new OperationDetails("Order with this id is not found", false);
+            }
+            _database.orderRepository.Update(_mapper.Map(orderDTO, order));
+            await _database.SaveAsync();
+            return new OperationDetails("Order is Updated!", true);
+
         }
 
-        public Task<ICollection<OrderDTO>> GetActiveOrdersAsync()
+        public async Task<ICollection<OrderDTO>> GetActiveOrdersAsync()
         {
-            throw new NotImplementedException();
+            return _mapper.Map<ICollection<OrderDTO>>(await _database.orderRepository.GetWhereAsync(o=>o.Active=="Active"));
         }
 
-        public Task<ICollection<OrderDTO>> GetAllOrdersAsync(OrderDTO orderDTO)
+        public async Task<ICollection<OrderDTO>> GetAllOrdersAsync(OrderDTO orderDTO)
         {
-            throw new NotImplementedException();
+            return _mapper.Map<ICollection<OrderDTO>>(await _database.orderRepository.GetAllAsync());
         }
 
-        public Task<OrderDTO> GetOrderById(int id)
+        public async Task<OrderDTO> GetOrderById(int id)
         {
-            throw new NotImplementedException();
+            var order = await _database.orderRepository.GetByIdAsync(id);
+            if (order == null)
+            {
+                throw new ServiceException("This order is not found");
+            }
+            return _mapper.Map<OrderDTO>(order);
         }
 
-        public Task<ICollection<OrderDTO>> GetOrderByUserAsync(string id)
+        public async Task<ICollection<OrderDTO>> GetOrderByUserAsync(int id)
         {
-            throw new NotImplementedException();
+            var order = await _database.orderRepository.GetWhereAsync(o => o.Customer.CustomerId == id);
+            return _mapper.Map<ICollection<OrderDTO>>(order);
         }
     }
 }

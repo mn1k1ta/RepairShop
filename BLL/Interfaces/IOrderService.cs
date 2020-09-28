@@ -14,7 +14,7 @@ namespace BLL.Interfaces
         Task<OperationDetails> DeleteOrderAsync(OrderDTO orderDTO);
         Task<ICollection<OrderDTO>> GetAllOrdersAsync(OrderDTO orderDTO);
         Task<OrderDTO> GetOrderById(int id);
-        Task<ICollection<OrderDTO>> GetOrderByUserAsync(string id);
+        Task<ICollection<OrderDTO>> GetOrderByUserAsync(int id);
         Task<ICollection<OrderDTO>> GetActiveOrdersAsync();
  
     }
