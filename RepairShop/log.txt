@@ -486,4 +486,654 @@ INSERT INTO [orderPrices] ([OrderId], [PriceId])
 VALUES (@p7, @p8);Executed DbCommand (10ms) [Parameters=[@p7='5', @p8='1'], CommandType='Text', CommandTimeout='30']
 SET NOCOUNT ON;
 INSERT INTO [orderPrices] ([OrderId], [PriceId])
-VALUES (@p7, @p8);A data reader was disposed.Committing transaction.Committing transaction.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Disposing transaction.The 'Order' entity with key '{OrderId: 5}' tracked by 'ShopDBContext' changed from 'Added' to 'Unchanged'.The 'OrderPrice' entity with key '{OrderId: 5, PriceId: 1}' tracked by 'ShopDBContext' changed from 'Added' to 'Unchanged'.SaveChanges completed for 'ShopDBContext' with 2 entities written to the database.'ShopDBContext' disposed.
+VALUES (@p7, @p8);A data reader was disposed.Committing transaction.Committing transaction.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Disposing transaction.The 'Order' entity with key '{OrderId: 5}' tracked by 'ShopDBContext' changed from 'Added' to 'Unchanged'.The 'OrderPrice' entity with key '{OrderId: 5, PriceId: 1}' tracked by 'ShopDBContext' changed from 'Added' to 'Unchanged'.SaveChanges completed for 'ShopDBContext' with 2 entities written to the database.'ShopDBContext' disposed.queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Order>(
+    asyncEnumerable: new QueryingEnumerable<Order>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache, 
+        null, 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Order>, 
+        DAL.Context.ShopDBContext, 
+        DiagnosticsLogger<Query>
+    ), 
+    cancellationToken: queryContext.CancellationToken)Creating DbCommand for 'ExecuteReader'.Created DbCommand for 'ExecuteReader' (169ms).Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Executing DbCommand [Parameters=[@__p_0='0'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (87ms) [Parameters=[@__p_0='0'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0A data reader was disposed.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.'ShopDBContext' disposed.Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Created DbCommand for 'ExecuteReader' (3ms).Created DbCommand for 'ExecuteReader' (3ms).Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Executing DbCommand [Parameters=[@__p_0='2'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='2'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (9ms) [Parameters=[@__p_0='2'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (9ms) [Parameters=[@__p_0='2'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 2}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 2}'.A data reader was disposed.A data reader was disposed.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.The 'Order' entity with key '{OrderId: 2}' tracked by 'ShopDBContext' changed from 'Unchanged' to 'Modified'.The 'Order' entity with key '{OrderId: 2}' tracked by 'ShopDBContext' changed from 'Unchanged' to 'Modified'.SaveChanges starting for 'ShopDBContext'.SaveChanges starting for 'ShopDBContext'.DetectChanges starting for 'ShopDBContext'.DetectChanges starting for 'ShopDBContext'.DetectChanges completed for 'ShopDBContext'.DetectChanges completed for 'ShopDBContext'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Beginning transaction with isolation level 'Unspecified'.Beginning transaction with isolation level 'Unspecified'.Began transaction with isolation level 'ReadCommitted'.Began transaction with isolation level 'ReadCommitted'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Created DbCommand for 'ExecuteReader' (1ms).Created DbCommand for 'ExecuteReader' (1ms).Executing DbCommand [Parameters=[@p7='2', @p0='Active' (Size = 4000), @p1=NULL (DbType = Int32), @p2='0001-01-01T00:00:00', @p3='NikitaTest' (Size = 4000), @p4=NULL (DbType = Int32), @p5='231', @p6=NULL (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [orders] SET [Active] = @p0, [CustomerId] = @p1, [Date] = @p2, [Description] = @p3, [ModelPhoneId] = @p4, [Price] = @p5, [Status] = @p6
+WHERE [OrderId] = @p7;
+SELECT @@ROWCOUNT;Executing DbCommand [Parameters=[@p7='2', @p0='Active' (Size = 4000), @p1=NULL (DbType = Int32), @p2='0001-01-01T00:00:00', @p3='NikitaTest' (Size = 4000), @p4=NULL (DbType = Int32), @p5='231', @p6=NULL (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [orders] SET [Active] = @p0, [CustomerId] = @p1, [Date] = @p2, [Description] = @p3, [ModelPhoneId] = @p4, [Price] = @p5, [Status] = @p6
+WHERE [OrderId] = @p7;
+SELECT @@ROWCOUNT;Executed DbCommand (15ms) [Parameters=[@p7='2', @p0='Active' (Size = 4000), @p1=NULL (DbType = Int32), @p2='0001-01-01T00:00:00', @p3='NikitaTest' (Size = 4000), @p4=NULL (DbType = Int32), @p5='231', @p6=NULL (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [orders] SET [Active] = @p0, [CustomerId] = @p1, [Date] = @p2, [Description] = @p3, [ModelPhoneId] = @p4, [Price] = @p5, [Status] = @p6
+WHERE [OrderId] = @p7;
+SELECT @@ROWCOUNT;Executed DbCommand (15ms) [Parameters=[@p7='2', @p0='Active' (Size = 4000), @p1=NULL (DbType = Int32), @p2='0001-01-01T00:00:00', @p3='NikitaTest' (Size = 4000), @p4=NULL (DbType = Int32), @p5='231', @p6=NULL (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [orders] SET [Active] = @p0, [CustomerId] = @p1, [Date] = @p2, [Description] = @p3, [ModelPhoneId] = @p4, [Price] = @p5, [Status] = @p6
+WHERE [OrderId] = @p7;
+SELECT @@ROWCOUNT;A data reader was disposed.A data reader was disposed.Committing transaction.Committing transaction.Committing transaction.Committing transaction.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Disposing transaction.Disposing transaction.The 'Order' entity with key '{OrderId: 2}' tracked by 'ShopDBContext' changed from 'Modified' to 'Unchanged'.The 'Order' entity with key '{OrderId: 2}' tracked by 'ShopDBContext' changed from 'Modified' to 'Unchanged'.SaveChanges completed for 'ShopDBContext' with 1 entities written to the database.SaveChanges completed for 'ShopDBContext' with 1 entities written to the database.'ShopDBContext' disposed.'ShopDBContext' disposed.Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Created DbCommand for 'ExecuteReader' (2ms).Created DbCommand for 'ExecuteReader' (2ms).Created DbCommand for 'ExecuteReader' (2ms).Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Executing DbCommand [Parameters=[@__p_0='4'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='4'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='4'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (9ms) [Parameters=[@__p_0='4'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (9ms) [Parameters=[@__p_0='4'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (9ms) [Parameters=[@__p_0='4'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 4}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 4}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 4}'.A data reader was disposed.A data reader was disposed.A data reader was disposed.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.The 'Order' entity with key '{OrderId: 4}' tracked by 'ShopDBContext' changed from 'Unchanged' to 'Modified'.The 'Order' entity with key '{OrderId: 4}' tracked by 'ShopDBContext' changed from 'Unchanged' to 'Modified'.The 'Order' entity with key '{OrderId: 4}' tracked by 'ShopDBContext' changed from 'Unchanged' to 'Modified'.SaveChanges starting for 'ShopDBContext'.SaveChanges starting for 'ShopDBContext'.SaveChanges starting for 'ShopDBContext'.DetectChanges starting for 'ShopDBContext'.DetectChanges starting for 'ShopDBContext'.DetectChanges starting for 'ShopDBContext'.DetectChanges completed for 'ShopDBContext'.DetectChanges completed for 'ShopDBContext'.DetectChanges completed for 'ShopDBContext'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Beginning transaction with isolation level 'Unspecified'.Beginning transaction with isolation level 'Unspecified'.Beginning transaction with isolation level 'Unspecified'.Began transaction with isolation level 'ReadCommitted'.Began transaction with isolation level 'ReadCommitted'.Began transaction with isolation level 'ReadCommitted'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Created DbCommand for 'ExecuteReader' (1ms).Created DbCommand for 'ExecuteReader' (1ms).Created DbCommand for 'ExecuteReader' (1ms).Executing DbCommand [Parameters=[@p7='4', @p0='Active' (Size = 4000), @p1=NULL (DbType = Int32), @p2='0001-01-01T00:00:00', @p3='NikitaTest' (Size = 4000), @p4=NULL (DbType = Int32), @p5='231', @p6=NULL (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [orders] SET [Active] = @p0, [CustomerId] = @p1, [Date] = @p2, [Description] = @p3, [ModelPhoneId] = @p4, [Price] = @p5, [Status] = @p6
+WHERE [OrderId] = @p7;
+SELECT @@ROWCOUNT;Executing DbCommand [Parameters=[@p7='4', @p0='Active' (Size = 4000), @p1=NULL (DbType = Int32), @p2='0001-01-01T00:00:00', @p3='NikitaTest' (Size = 4000), @p4=NULL (DbType = Int32), @p5='231', @p6=NULL (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [orders] SET [Active] = @p0, [CustomerId] = @p1, [Date] = @p2, [Description] = @p3, [ModelPhoneId] = @p4, [Price] = @p5, [Status] = @p6
+WHERE [OrderId] = @p7;
+SELECT @@ROWCOUNT;Executing DbCommand [Parameters=[@p7='4', @p0='Active' (Size = 4000), @p1=NULL (DbType = Int32), @p2='0001-01-01T00:00:00', @p3='NikitaTest' (Size = 4000), @p4=NULL (DbType = Int32), @p5='231', @p6=NULL (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [orders] SET [Active] = @p0, [CustomerId] = @p1, [Date] = @p2, [Description] = @p3, [ModelPhoneId] = @p4, [Price] = @p5, [Status] = @p6
+WHERE [OrderId] = @p7;
+SELECT @@ROWCOUNT;Executed DbCommand (11ms) [Parameters=[@p7='4', @p0='Active' (Size = 4000), @p1=NULL (DbType = Int32), @p2='0001-01-01T00:00:00', @p3='NikitaTest' (Size = 4000), @p4=NULL (DbType = Int32), @p5='231', @p6=NULL (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [orders] SET [Active] = @p0, [CustomerId] = @p1, [Date] = @p2, [Description] = @p3, [ModelPhoneId] = @p4, [Price] = @p5, [Status] = @p6
+WHERE [OrderId] = @p7;
+SELECT @@ROWCOUNT;Executed DbCommand (11ms) [Parameters=[@p7='4', @p0='Active' (Size = 4000), @p1=NULL (DbType = Int32), @p2='0001-01-01T00:00:00', @p3='NikitaTest' (Size = 4000), @p4=NULL (DbType = Int32), @p5='231', @p6=NULL (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [orders] SET [Active] = @p0, [CustomerId] = @p1, [Date] = @p2, [Description] = @p3, [ModelPhoneId] = @p4, [Price] = @p5, [Status] = @p6
+WHERE [OrderId] = @p7;
+SELECT @@ROWCOUNT;Executed DbCommand (11ms) [Parameters=[@p7='4', @p0='Active' (Size = 4000), @p1=NULL (DbType = Int32), @p2='0001-01-01T00:00:00', @p3='NikitaTest' (Size = 4000), @p4=NULL (DbType = Int32), @p5='231', @p6=NULL (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [orders] SET [Active] = @p0, [CustomerId] = @p1, [Date] = @p2, [Description] = @p3, [ModelPhoneId] = @p4, [Price] = @p5, [Status] = @p6
+WHERE [OrderId] = @p7;
+SELECT @@ROWCOUNT;A data reader was disposed.A data reader was disposed.A data reader was disposed.Committing transaction.Committing transaction.Committing transaction.Committing transaction.Committing transaction.Committing transaction.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Disposing transaction.Disposing transaction.Disposing transaction.The 'Order' entity with key '{OrderId: 4}' tracked by 'ShopDBContext' changed from 'Modified' to 'Unchanged'.The 'Order' entity with key '{OrderId: 4}' tracked by 'ShopDBContext' changed from 'Modified' to 'Unchanged'.The 'Order' entity with key '{OrderId: 4}' tracked by 'ShopDBContext' changed from 'Modified' to 'Unchanged'.SaveChanges completed for 'ShopDBContext' with 1 entities written to the database.SaveChanges completed for 'ShopDBContext' with 1 entities written to the database.SaveChanges completed for 'ShopDBContext' with 1 entities written to the database.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Created DbCommand for 'ExecuteReader' (3ms).Created DbCommand for 'ExecuteReader' (3ms).Created DbCommand for 'ExecuteReader' (3ms).Created DbCommand for 'ExecuteReader' (3ms).Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Executing DbCommand [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (13ms) [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (13ms) [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (13ms) [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (13ms) [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Created DbCommand for 'ExecuteReader' (4ms).Created DbCommand for 'ExecuteReader' (4ms).Created DbCommand for 'ExecuteReader' (4ms).Created DbCommand for 'ExecuteReader' (4ms).Created DbCommand for 'ExecuteReader' (4ms).Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Executing DbCommand [Parameters=[@__p_0='2'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='2'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='2'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='2'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='2'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (12ms) [Parameters=[@__p_0='2'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (12ms) [Parameters=[@__p_0='2'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (12ms) [Parameters=[@__p_0='2'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (12ms) [Parameters=[@__p_0='2'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (12ms) [Parameters=[@__p_0='2'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 2}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 2}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 2}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 2}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 2}'.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.The 'Order' entity with key '{OrderId: 2}' tracked by 'ShopDBContext' changed from 'Unchanged' to 'Deleted'.The 'Order' entity with key '{OrderId: 2}' tracked by 'ShopDBContext' changed from 'Unchanged' to 'Deleted'.The 'Order' entity with key '{OrderId: 2}' tracked by 'ShopDBContext' changed from 'Unchanged' to 'Deleted'.The 'Order' entity with key '{OrderId: 2}' tracked by 'ShopDBContext' changed from 'Unchanged' to 'Deleted'.The 'Order' entity with key '{OrderId: 2}' tracked by 'ShopDBContext' changed from 'Unchanged' to 'Deleted'.SaveChanges starting for 'ShopDBContext'.SaveChanges starting for 'ShopDBContext'.SaveChanges starting for 'ShopDBContext'.SaveChanges starting for 'ShopDBContext'.SaveChanges starting for 'ShopDBContext'.DetectChanges starting for 'ShopDBContext'.DetectChanges starting for 'ShopDBContext'.DetectChanges starting for 'ShopDBContext'.DetectChanges starting for 'ShopDBContext'.DetectChanges starting for 'ShopDBContext'.DetectChanges completed for 'ShopDBContext'.DetectChanges completed for 'ShopDBContext'.DetectChanges completed for 'ShopDBContext'.DetectChanges completed for 'ShopDBContext'.DetectChanges completed for 'ShopDBContext'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Beginning transaction with isolation level 'Unspecified'.Beginning transaction with isolation level 'Unspecified'.Beginning transaction with isolation level 'Unspecified'.Beginning transaction with isolation level 'Unspecified'.Beginning transaction with isolation level 'Unspecified'.Began transaction with isolation level 'ReadCommitted'.Began transaction with isolation level 'ReadCommitted'.Began transaction with isolation level 'ReadCommitted'.Began transaction with isolation level 'ReadCommitted'.Began transaction with isolation level 'ReadCommitted'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Created DbCommand for 'ExecuteReader' (4ms).Created DbCommand for 'ExecuteReader' (4ms).Created DbCommand for 'ExecuteReader' (4ms).Created DbCommand for 'ExecuteReader' (4ms).Created DbCommand for 'ExecuteReader' (4ms).Executing DbCommand [Parameters=[@p0='2'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [orders]
+WHERE [OrderId] = @p0;
+SELECT @@ROWCOUNT;Executing DbCommand [Parameters=[@p0='2'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [orders]
+WHERE [OrderId] = @p0;
+SELECT @@ROWCOUNT;Executing DbCommand [Parameters=[@p0='2'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [orders]
+WHERE [OrderId] = @p0;
+SELECT @@ROWCOUNT;Executing DbCommand [Parameters=[@p0='2'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [orders]
+WHERE [OrderId] = @p0;
+SELECT @@ROWCOUNT;Executing DbCommand [Parameters=[@p0='2'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [orders]
+WHERE [OrderId] = @p0;
+SELECT @@ROWCOUNT;Executed DbCommand (15ms) [Parameters=[@p0='2'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [orders]
+WHERE [OrderId] = @p0;
+SELECT @@ROWCOUNT;Executed DbCommand (15ms) [Parameters=[@p0='2'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [orders]
+WHERE [OrderId] = @p0;
+SELECT @@ROWCOUNT;Executed DbCommand (15ms) [Parameters=[@p0='2'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [orders]
+WHERE [OrderId] = @p0;
+SELECT @@ROWCOUNT;Executed DbCommand (15ms) [Parameters=[@p0='2'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [orders]
+WHERE [OrderId] = @p0;
+SELECT @@ROWCOUNT;Executed DbCommand (15ms) [Parameters=[@p0='2'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [orders]
+WHERE [OrderId] = @p0;
+SELECT @@ROWCOUNT;A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.Committing transaction.Committing transaction.Committing transaction.Committing transaction.Committing transaction.Committing transaction.Committing transaction.Committing transaction.Committing transaction.Committing transaction.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Disposing transaction.Disposing transaction.Disposing transaction.Disposing transaction.Disposing transaction.The 'Order' entity with key '{OrderId: 2}' tracked by 'ShopDBContext' changed from 'Deleted' to 'Detached'.The 'Order' entity with key '{OrderId: 2}' tracked by 'ShopDBContext' changed from 'Deleted' to 'Detached'.The 'Order' entity with key '{OrderId: 2}' tracked by 'ShopDBContext' changed from 'Deleted' to 'Detached'.The 'Order' entity with key '{OrderId: 2}' tracked by 'ShopDBContext' changed from 'Deleted' to 'Detached'.The 'Order' entity with key '{OrderId: 2}' tracked by 'ShopDBContext' changed from 'Deleted' to 'Detached'.SaveChanges completed for 'ShopDBContext' with 1 entities written to the database.SaveChanges completed for 'ShopDBContext' with 1 entities written to the database.SaveChanges completed for 'ShopDBContext' with 1 entities written to the database.SaveChanges completed for 'ShopDBContext' with 1 entities written to the database.SaveChanges completed for 'ShopDBContext' with 1 entities written to the database.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Created DbCommand for 'ExecuteReader' (7ms).Created DbCommand for 'ExecuteReader' (7ms).Created DbCommand for 'ExecuteReader' (7ms).Created DbCommand for 'ExecuteReader' (7ms).Created DbCommand for 'ExecuteReader' (7ms).Created DbCommand for 'ExecuteReader' (7ms).Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Executing DbCommand [Parameters=[@__p_0='7'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='7'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='7'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='7'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='7'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='7'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (18ms) [Parameters=[@__p_0='7'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (18ms) [Parameters=[@__p_0='7'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (18ms) [Parameters=[@__p_0='7'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (18ms) [Parameters=[@__p_0='7'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (18ms) [Parameters=[@__p_0='7'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (18ms) [Parameters=[@__p_0='7'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled queryContext => new QueryingEnumerable<Order>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Order>, 
+    DAL.Context.ShopDBContext, 
+    DiagnosticsLogger<Query>
+)queryContext => new QueryingEnumerable<Order>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Order>, 
+    DAL.Context.ShopDBContext, 
+    DiagnosticsLogger<Query>
+)queryContext => new QueryingEnumerable<Order>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Order>, 
+    DAL.Context.ShopDBContext, 
+    DiagnosticsLogger<Query>
+)queryContext => new QueryingEnumerable<Order>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Order>, 
+    DAL.Context.ShopDBContext, 
+    DiagnosticsLogger<Query>
+)queryContext => new QueryingEnumerable<Order>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Order>, 
+    DAL.Context.ShopDBContext, 
+    DiagnosticsLogger<Query>
+)queryContext => new QueryingEnumerable<Order>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Order>, 
+    DAL.Context.ShopDBContext, 
+    DiagnosticsLogger<Query>
+)queryContext => new QueryingEnumerable<Order>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Order>, 
+    DAL.Context.ShopDBContext, 
+    DiagnosticsLogger<Query>
+)Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Created DbCommand for 'ExecuteReader' (7ms).Created DbCommand for 'ExecuteReader' (7ms).Created DbCommand for 'ExecuteReader' (7ms).Created DbCommand for 'ExecuteReader' (7ms).Created DbCommand for 'ExecuteReader' (7ms).Created DbCommand for 'ExecuteReader' (7ms).Created DbCommand for 'ExecuteReader' (7ms).Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 3}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 3}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 3}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 3}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 3}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 3}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 3}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 4}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 4}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 4}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 4}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 4}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 4}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 4}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 5}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 5}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 5}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 5}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 5}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 5}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 5}'.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Executing DbCommand [Parameters=[@__p_0='4'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='4'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='4'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='4'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='4'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='4'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='4'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='4'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (20ms) [Parameters=[@__p_0='4'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (20ms) [Parameters=[@__p_0='4'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (20ms) [Parameters=[@__p_0='4'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (20ms) [Parameters=[@__p_0='4'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (20ms) [Parameters=[@__p_0='4'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (20ms) [Parameters=[@__p_0='4'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (20ms) [Parameters=[@__p_0='4'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (20ms) [Parameters=[@__p_0='4'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 4}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 4}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 4}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 4}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 4}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 4}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 4}'.Context 'ShopDBContext' started tracking 'Order' entity with key '{OrderId: 4}'.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Created DbCommand for 'ExecuteReader' (8ms).Created DbCommand for 'ExecuteReader' (8ms).Created DbCommand for 'ExecuteReader' (8ms).Created DbCommand for 'ExecuteReader' (8ms).Created DbCommand for 'ExecuteReader' (8ms).Created DbCommand for 'ExecuteReader' (8ms).Created DbCommand for 'ExecuteReader' (8ms).Created DbCommand for 'ExecuteReader' (8ms).Created DbCommand for 'ExecuteReader' (8ms).Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Executing DbCommand [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executing DbCommand [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (23ms) [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (23ms) [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (23ms) [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (23ms) [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (23ms) [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (23ms) [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (23ms) [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (23ms) [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0Executed DbCommand (23ms) [Parameters=[@__p_0='9'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+WHERE [o].[OrderId] = @__p_0A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled queryContext => new QueryingEnumerable<Order>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Order>, 
+    DAL.Context.ShopDBContext, 
+    DiagnosticsLogger<Query>
+)queryContext => new QueryingEnumerable<Order>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Order>, 
+    DAL.Context.ShopDBContext, 
+    DiagnosticsLogger<Query>
+)queryContext => new QueryingEnumerable<Order>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Order>, 
+    DAL.Context.ShopDBContext, 
+    DiagnosticsLogger<Query>
+)queryContext => new QueryingEnumerable<Order>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Order>, 
+    DAL.Context.ShopDBContext, 
+    DiagnosticsLogger<Query>
+)queryContext => new QueryingEnumerable<Order>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Order>, 
+    DAL.Context.ShopDBContext, 
+    DiagnosticsLogger<Query>
+)queryContext => new QueryingEnumerable<Order>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Order>, 
+    DAL.Context.ShopDBContext, 
+    DiagnosticsLogger<Query>
+)queryContext => new QueryingEnumerable<Order>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Order>, 
+    DAL.Context.ShopDBContext, 
+    DiagnosticsLogger<Query>
+)queryContext => new QueryingEnumerable<Order>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Order>, 
+    DAL.Context.ShopDBContext, 
+    DiagnosticsLogger<Query>
+)queryContext => new QueryingEnumerable<Order>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Order>, 
+    DAL.Context.ShopDBContext, 
+    DiagnosticsLogger<Query>
+)queryContext => new QueryingEnumerable<Order>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Order>, 
+    DAL.Context.ShopDBContext, 
+    DiagnosticsLogger<Query>
+)Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Executing DbCommand [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executing DbCommand [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executing DbCommand [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executing DbCommand [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executing DbCommand [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executing DbCommand [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executing DbCommand [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executing DbCommand [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executing DbCommand [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executing DbCommand [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executed DbCommand (24ms) [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executed DbCommand (24ms) [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executed DbCommand (24ms) [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executed DbCommand (24ms) [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executed DbCommand (24ms) [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executed DbCommand (24ms) [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executed DbCommand (24ms) [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executed DbCommand (24ms) [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executed DbCommand (24ms) [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executed DbCommand (24ms) [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Entity Framework Core 3.1.5 initialized 'ShopDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: SensitiveDataLoggingEnabled Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Creating DbCommand for 'ExecuteReader'.Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Created DbCommand for 'ExecuteReader' (6ms).Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opening connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Opened connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Executing DbCommand [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executing DbCommand [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executing DbCommand [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executing DbCommand [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executing DbCommand [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executing DbCommand [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executing DbCommand [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executing DbCommand [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executing DbCommand [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executing DbCommand [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executing DbCommand [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executed DbCommand (49ms) [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executed DbCommand (49ms) [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executed DbCommand (49ms) [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executed DbCommand (49ms) [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executed DbCommand (49ms) [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executed DbCommand (49ms) [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executed DbCommand (49ms) [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executed DbCommand (49ms) [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executed DbCommand (49ms) [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executed DbCommand (49ms) [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0Executed DbCommand (49ms) [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[Active], [o].[CustomerId], [o].[Date], [o].[Description], [o].[ModelPhoneId], [o].[Price], [o].[Status]
+FROM [orders] AS [o]
+LEFT JOIN [customers] AS [c] ON [o].[CustomerId] = [c].[CustomerId]
+WHERE [c].[CustomerId] = @__id_0A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.A data reader was disposed.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closing connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.Closed connection to database 'RepairShop' on server '(localdb)\mssqllocaldb'.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.'ShopDBContext' disposed.

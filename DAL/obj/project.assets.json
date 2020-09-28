@@ -5047,11 +5047,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MI\\Desktop\\мусор\\RepairShop\\DAL\\DAL.csproj",
+      "projectUniqueName": "C:\\Users\\MI\\Desktop\\RepairShop\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "C:\\Users\\MI\\Desktop\\мусор\\RepairShop\\DAL\\DAL.csproj",
+      "projectPath": "C:\\Users\\MI\\Desktop\\RepairShop\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\MI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MI\\Desktop\\мусор\\RepairShop\\DAL\\obj\\",
+      "outputPath": "C:\\Users\\MI\\Desktop\\RepairShop\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MI\\AppData\\Roaming\\NuGet\\NuGet.Config",
